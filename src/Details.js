@@ -1,5 +1,9 @@
-const Details = () => {
-    return <h2>Whatever You Want</h2>
-};
+import { useParams } from 'react-router-dom';
 
-export default Details;
+
+const Details = () => {
+    const { id } = useParams();
+    return <h2>{id}!</h2>;
+  };
+  
+  export default Details;
